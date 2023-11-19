@@ -1,0 +1,204 @@
+html{
+    height: 100%;
+    background: #790225;
+    color: white;
+}
+
+.body{
+    margin-bottom: 20px;
+}
+
+.header{
+    background: #E40045;
+    width: 100%;
+    border: 5px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0;
+}
+
+#representation-id{
+    text-align: center;
+}
+
+#representation-id p{
+    font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    display: inline;
+    padding: 20px;
+}
+
+.coordinate-plane{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: 370px;
+    bottom: 20px;
+    left: -355px;
+    border: #E40045 5px solid;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#data-input-id{
+    height: 300px;
+    width: 480px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border: #E40045 5px solid;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.data-input-form hr{
+    border: 2px #E40045 solid;
+}
+
+.x-input-label{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.x-input-label input{
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.x-input-label input:focus,
+.x-input-label input:hover,
+.x-input-label input:active{
+    background: #ff447d;
+    box-shadow: 0 0 20px #E40045;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.y-input-form input{
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px #E40045 solid;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+}
+
+.y-input-form input::placeholder{
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#r-input-form-id{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.r-input-choice{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 30px 0 15px;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.r-input-choice:focus,
+.r-input-choice:hover,
+.r-input-choice:active{
+    background: #ff447d;
+    box-shadow: 0 0 20px #E40045;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.button-submit-form{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button-clear-data{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#button-submit-form-id:focus,
+#button-submit-form-id:hover,
+#button-clear-data-id:focus,
+#button-clear-data-id:hover{
+    background: #ff447d;
+    box-shadow: 0 0 20px #E40045;
+    transform: scale(1.1);
+}
+
+.error-label{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#table-id{
+    border-collapse: collapse;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    min-width: 400px;
+    font-weight: bold;
+    font-family: Times, Times New Roman, serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+#thead-id tr, th{
+    border: #E40045 5px solid;
+    padding: 12px;
+}
+
+#tbody-id tr, td{
+    border: #E40045 5px solid;
+    padding: 12px;
+}
+
+.footer{
+    background: #E40045;
+    width: 100%;
+    height: 2.5em;
+    position: fixed;
+    bottom: 0;
+    border: 5px;
+    border-radius: 10px;
+    padding: 0;
+    display: table-row;
+}

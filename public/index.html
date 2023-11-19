@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <script src="../js/draw.js" type="application/javascript"></script>
+    <script src="../js/clean.js"></script>
+    <script src="../js/setActiveButton.js"></script>
+    <script src="../js/handleRequest.js"></script>
+    <script defer src="../js/validate.js"></script>
+</head>
+
+<body onload="draw()">
+    <!--Шапка-->
+    <header class="header" id="header-id">
+        <div class="representation" id="representation-id">
+            <p>Тиме Олег Евгеньевич</p>
+            <p>Группа P3225</p>
+            <p>Вариант №3520</p>
+        </div>
+    </header>
+
+    <!--Тело-->
+    <main>
+        <!--Координатная плоскость-->
+        <div class="coordinate-plane" id="coordinate-plane-id">
+            <canvas id="canvas" height="400px" width="400px"></canvas>
+        </div>
+
+        <!--Форма для данных-->
+        <div class="data-input" id="data-input-id">
+            <form class="data-input-form" id="data-input-form-id" name="form" onsubmit="validate(this)">
+                <div class="x-input-form" id="x-input-form-id">
+                    <label class="x-input-label" for="x-input-choice1">
+                        <input type="button" class="x-input" id="x-input-choice1" name="-4" value="-4" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice2">
+                        <input type="button" class="x-input" id="x-input-choice2" name="-3" value="-3" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice3">
+                        <input type="button" class="x-input" id="x-input-choice3" name="-2" value="-2" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice4">
+                        <input type="button" class="x-input" id="x-input-choice4" name="-1" value="-1" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice5">
+                        <input type="button" class="x-input" id="x-input-choice5" name="0" value="0" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice6">
+                        <input type="button" class="x-input" id="x-input-choice6" name="1" value="1" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice7">
+                        <input type="button" class="x-input" id="x-input-choice7" name="2" value="2" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice8">
+                        <input type="button" class="x-input" id="x-input-choice8" name="3" value="3" />
+                    </label>
+
+                    <label class="x-input-label" for="x-input-choice9">
+                        <input type="button" class="x-input" id="x-input-choice9" name="4" value="4" />
+                    </label>
+                </div>
+                <hr />
+
+                <div class="y-input-form" id="y-input-form-id">
+                    <label class="y-input-choice" for="y-input-choice-id">
+                        <input type="text" id="y-input-choice-id" name="y-input"
+                            placeholder="Введите значение из диапозона (-3...3)" />
+                    </label>
+                </div>
+                <br />
+
+                <div class="r-input-form" id="r-input-form-id">
+                    <label class="r-input-label" for="r-input-choice-id">
+                        <select class="r-input-choice" id="r-input-choice-id" name="r-input-select" required>
+                            <option id="r-input-choice-default" name="r-input" value="">Выберите параметр для R!
+                            </option>
+                            <option id="r-input-choice1" name="r-input" value="1">1</option>
+                            <option id="r-input-choice2" name="r-input" value="2">2</option>
+                            <option id="r-input-choice3" name="r-input" value="3">3</option>
+                            <option id="r-input-choice4" name="r-input" value="4">4</option>
+                            <option id="r-input-choice5" name="r-input" value="5">5</option>
+                        </select>
+                    </label>
+                </div>
+                <hr />
+
+                <div class="submit-form" id="submit-form-id">
+                    <button class="button-submit-form" id="button-submit-form-id" type="submit">
+                        <span class="text-button-submit-form" id="text-button-submit-form-id">
+                            Отправить данные!
+                        </span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="clear-data-table" id="clear-data-table-id">
+                <button class="button-clear-data" id="button-clear-data-id" onclick="clean()">
+                    <span class="text-button-clear-data" id="text-button-clear-data-id">
+                        Очистить таблицу!
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!--Таблица с результатом-->
+        <div class="result-table" id="result-table-id">
+            <table class="table" id="table-id">
+                <thead class="thead" id="thead-id">
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>R</th>
+                        <th>Результат</th>
+                        <th>Время выполнения скрипта</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody" id="tbody-id"></tbody>
+            </table>
+        </div>
+        <script src="../js/addResultToTable.js"></script>
+    </main>
+
+    <!--Низ-->
+    <!-- <footer class="footer" id="footer-id">
+        <div class="copyright" id="copyright-id">
+        </div>
+    </footer> -->
+</body>
+
+</html>
